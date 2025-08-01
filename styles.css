@@ -1,0 +1,157 @@
+/*--By default, FONT STUFF --*/
+h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    color: #3749FE;
+    font-size: 30px;
+}
+
+p, li, address {
+    font-family: Outfit;
+    font-weight: 300; 
+}
+
+
+a:visited {
+    color: rgb(0, 0, 0);  /*Color of links already visited*/
+}
+
+a:link {
+    color: rgb(0, 0, 0); /*Color of links*/
+}
+
+
+img {
+    border-radius: 20px; /*by default, round image border radius*/
+}
+
+
+
+
+/*-- header with rounded background --*/
+h2 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    flex: 1;
+    text-align: center;
+}
+
+.h2-header h2 {
+    background-color: #3748FE;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.index-header {
+    display: flex;
+    max-height: 50px;
+    justify-content: center;
+}
+
+
+.about-me img {
+    padding: 10px;
+    margin: 20px;
+}
+
+.index-header img {
+    border-radius: 0px;
+    height: 100%;
+    max-width: 28px;
+    display: block;
+    margin-top: 22px;
+}
+
+
+
+
+
+.about-me, .major-projects, .exercises, .tools {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /*-- 3 sections shadow --*/
+    padding: 20px;
+    border-radius: 25px;
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+/*-- DESKTOP PROPERTIES ---------*/
+@media only screen and (min-width: 1020px) {
+
+body {
+    max-width: 900px;
+    margin: auto;
+}
+
+.projects-exercises-tools {
+    display: flex;
+    flex-direction: none;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+/*-- about me --*/
+.about-me {
+    display: flex;
+    margin: 20px;
+
+}
+
+.about-me aside {
+    padding: 20px;
+    text-align: left;
+}
+
+
+
+footer {
+    font-family: Outfit;
+    font-weight: 100;
+    width: 900px;
+}
+
+
+}
+
+
+
+
+/*--MOBILE PROPERTIES ---------*/
+@media only screen and (min-width: 600px) {
+
+ 
+ body {
+    max-width: 900px;
+    margin: auto;
+}
+ 
+ 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.projects-exercises-tools {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.about-me img {
+    display: block;
+    margin: auto;
+}
+
+}
